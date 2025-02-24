@@ -23,15 +23,17 @@ function Users() {
                                 <th className="p-3 ">Id</th>
                                     <th className="p-3 border-b">Name</th>
                                     <th className="p-3 border-b">Email</th>
+                                    <th className="p-3 border-b">Phone</th>
                                     <th className="p-3 border-b"> Task assigned</th>
                                     <th className="p-3 border-b"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr className=" hover:bg-gray-50 ">
-                                    <td className="p-3 ">demo</td>
-                                    <td className="p-3">completed</td>
-                                    <td className="p-3">demo</td>
+                                    <td className="p-3 ">1</td>
+                                    <td className="p-3">archana</td>
+                                    <td className="p-3">a@gmail.com</td>
+                                    <td className="p-3">909</td>
                                     <td className="p-3">demo</td>
                                     <td className="p-3">
                                         

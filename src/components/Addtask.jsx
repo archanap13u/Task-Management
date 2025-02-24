@@ -6,7 +6,7 @@ function Addtask() {
     const [show, setShow] = useState(false);
 
     const[data,setdata]=useState({
-        title:"",team:[],stage:"",date:""
+        title:"",description:"",team:[],stage:"",date:""
     })
     const [selectedMembers, setSelectedMembers] = useState([]);
 
@@ -60,6 +60,13 @@ function Addtask() {
                         placeholder="Task title"
                         onChange={(e)=>setdata({...data,title:e.target.value})}
                     />
+                    <label className="mt-3 block text-gray-700">Task Description</label>
+                    <input
+                        type="text"
+                        className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="About Task"
+                        onChange={(e)=>setdata({...data,description:e.target.value})}
+                    />
 
                     < label className="mt-3 block font-medium text-gray-700">Assign Task To:</label>
                     <div className="relative inline-block w-100">
@@ -69,13 +76,13 @@ function Addtask() {
                         >
                             {selectedMembers.length > 0
                                 ? selectedMembers.join(", ")
-                                : "Select Team Members"}
+                                : <span className=' text-gray-400'>Select Team Members</span>}
                         </button>
 
                         {isOpen && (
                             <div className="absolute left-0 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg z-10">
                                 <div className="flex justify-between items-center p-2 border-b">
-                                    <span className="font-medium">Select Members</span>
+                                    <span className="font-medium  text-gray-700">Select Members</span>
                                     <button
                                         onClick={() => setIsOpen(false)}
                                         className="text-gray-500 hover:text-gray-700"
@@ -114,7 +121,7 @@ function Addtask() {
                             <select className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
                             onChange={(e)=>{setdata({...data,stage:e.target.value})}}>
                                 <option value="option1">select stage</option>
-                                <option value="option2">TODO</option>
+                                <option value="option2">PENDING</option>
                                 <option value="option3">ON PROGRESS</option>
                                 <option value="option4"> COMPLETED</option>
                             </select>

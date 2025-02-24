@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-
+import { FaEdit } from 'react-icons/fa';
 function Edittask() {
      const [selectedMembers, setSelectedMembers] = useState([]);
         const [show, setShow] = useState(false);
@@ -32,14 +32,14 @@ function Edittask() {
 
     return (
         <>
-            <button
+            <FaEdit
 
-                className="text-yellow-500 font-bold pr-3 bg-transparent border-none cursor-pointer"
+                className="text-yellow-500  cursor-pointer"
                 style={{ textDecoration: 'none' }}
                 onClick={handleShow}
-            >
-                Edit
-            </button>
+                fontSize={19}
+            
+            />
             <Modal
                 show={show}
                 onHide={handleClose}
@@ -57,6 +57,13 @@ function Edittask() {
                         className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Task title"
                     />
+                     <label className="mt-3 block text-gray-700">Task Description</label>
+                    <input
+                        type="text"
+                        className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="About Task"
+                        onChange={(e)=>setdata({...data,description:e.target.value})}
+                    />
 
                     < label className="mt-3 block font-medium text-gray-700">Assign Task To:</label>
                     <div className="relative inline-block w-100">
@@ -66,7 +73,7 @@ function Edittask() {
                         >
                             {selectedMembers.length > 0
                                 ? selectedMembers.join(", ")
-                                : "Select Team Members"}
+                                :<span className=' text-gray-400'>Select Team Members</span>}
                         </button>
 
                         {isOpen && (

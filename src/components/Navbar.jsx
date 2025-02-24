@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { MdOutlineSearch } from 'react-icons/md'
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineLogout } from "react-icons/ai";
@@ -9,6 +9,19 @@ function Navbar() {
 
     const [open, setopen] = useState(false)
     const [menuopen,setmenuopen]=useState(false)
+    const dropdownRef=useRef(null)
+
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setopen(false);
+          }
+        };
+    
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+      }, []);
 
     const opens = () => {
         setopen(!open)
