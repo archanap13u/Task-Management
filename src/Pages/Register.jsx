@@ -28,7 +28,7 @@ export default function Register() {
           <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-blue-100">
             <UserPlus className="h-6 w-6 text-blue-600" />
           </div>
-          <h2 className="mt-6 text-2xl font-bold text-gray-900">Create your account</h2>
+          <h2 className="mt-6 text-3xl font-bold text-gray-900">Create your account</h2>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm">
