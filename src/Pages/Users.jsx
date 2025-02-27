@@ -18,33 +18,33 @@ function Users() {
     <h3 className='fw-bold text-[23px]  ' >Users</h3>
        
     <table className="w-full bg-white mt-4  border-gray-300 rounded-xlg shadow-sm" style={{borderRadius:'10px'}}>
-                            <thead className="bg-blue-200 " >
-                                <tr className="text-left text-gray-700">
-                                <th className="p-3 ">Id</th>
-                                    <th className="p-3 border-b">Name</th>
-                                    <th className="p-3 border-b">Email</th>
-                                    <th className="p-3 border-b">Phone</th>
-                                    <th className="p-3 border-b"> Task assigned</th>
-                                    <th className="p-3 border-b"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr className=" hover:bg-gray-50 ">
-                                    <td className="p-3 ">1</td>
-                                    <td className="p-3">archana</td>
-                                    <td className="p-3">a@gmail.com</td>
-                                    <td className="p-3">909</td>
-                                    <td className="p-3">demo</td>
-                                    <td className="p-3">
-                                        
-                                        <Link to={""} className="text-red-500 font-bold hover:underline">Delete</Link>
-                                    </td>
-                                </tr>
+        <thead className="bg-blue-200 " >
+            <tr className="text-left text-gray-700">
+            <th className="p-3 ">Id</th>
+                <th className="p-3 border-b">Name</th>
+                <th className="p-3 border-b">Email</th>
+                <th className="p-3 border-b">Phone</th>
+                <th className="p-3 border-b"> Task assigned</th>
+                <th className="p-3 border-b"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr className=" hover:bg-gray-50 ">
+                <td className="p-3 ">1</td>
+                <td className="p-3">archana</td>
+                <td className="p-3">a@gmail.com</td>
+                <td className="p-3">909</td>
+                <td className="p-3">demo</td>
+                <td className="p-3">
+                    
+                    <Link to={""} className="text-red-500 font-bold hover:underline">Delete</Link>
+                </td>
+            </tr>
 
-                                
-                            </tbody>
-                        </table>
-                        </div>
+            
+        </tbody>
+    </table>
+    </div>
         </div>
     </div>
     </div>
