@@ -12,6 +12,7 @@ import Transactions from './Pages/Transactions.jsx'
 // import OverdueTasks from './Pages/OverdueTasks.jsx'
 import Login from './Pages/Login.jsx'
 import Register from './Pages/Register.jsx'
+import DetailLead from './Pages/DetailLead.jsx'
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
     <Route path='/transactions' element={<Transactions/>}/>
     <Route path='/' element={<Login/>}/>
     <Route path="/register" element={<Register />} />
+    <Route path="/projectdetail" element={<DetailLead />} />
+
    
     </Routes> 
    

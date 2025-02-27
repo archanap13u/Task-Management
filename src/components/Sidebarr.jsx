@@ -22,10 +22,10 @@ function Sidebarr() {
 
       <div className='flex-1 flex flex-col gap-y-5 py-3'>
         <Link
-          to='/'
+          to='/dash'
           className={`flex gap-2 px-3 py-2 rounded-full items-center text-gray-800 text-base transition-all 
             ${
-              location.pathname === '/' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'
+              location.pathname === '/dash' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'
             }`}
         >
           <MdDashboard /> Tasks
@@ -49,6 +49,15 @@ function Sidebarr() {
             }`}
         >
           <AiFillAccountBook /> Accounts
+        </Link>
+        <Link
+          to='/projectdetail'
+          className={`flex gap-2 px-3 py-2 rounded-full items-center text-gray-800 text-base transition-all 
+            ${
+              location.pathname === '/projectdetail' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'
+            }`}
+        >
+          <AiFillAccountBook /> Project leads
         </Link>
       </div>
     </div>
