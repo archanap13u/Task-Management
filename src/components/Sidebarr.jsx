@@ -59,6 +59,15 @@ function Sidebarr() {
         >
           <AiFillAccountBook /> Project leads
         </Link>
+        <Link
+          to='/reguser'
+          className={`flex gap-2 px-3 py-2 rounded-full items-center text-gray-800 text-base transition-all 
+            ${
+              location.pathname === '/reguser' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'
+            }`}
+        >
+          <AiFillAccountBook /> User Registration
+        </Link>
       </div>
     </div>
             

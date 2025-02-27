@@ -61,7 +61,7 @@ function DetailLead() {
                         <td className='text-red-500'>rejected</td>
                         <td className='flex flex-column h-full' >
                             
-                                <div className='text-dark ' style={{fontWeight:'bold'}}>
+                                <div className='text- ' style={{fontWeight:'bold'}}>
                                 name
                                 </div>
                                 <div >

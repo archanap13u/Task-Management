@@ -13,7 +13,7 @@ import Transactions from './Pages/Transactions.jsx'
 import Login from './Pages/Login.jsx'
 import Register from './Pages/Register.jsx'
 import DetailLead from './Pages/DetailLead.jsx'
-
+import RegisterByAdmin from './Pages/RegisterByAdmin.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +32,8 @@ function App() {
     <Route path='/' element={<Login/>}/>
     <Route path="/register" element={<Register />} />
     <Route path="/projectdetail" element={<DetailLead />} />
+    <Route path="/reguser" element={<RegisterByAdmin />} />
+
 
    
     </Routes> 
