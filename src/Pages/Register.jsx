@@ -23,7 +23,7 @@ export default function Register() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12  px-4 sm:px-6 lg:px-8">
-      <div className="max-w-lg bg-bla  space-y-7 p-7 rounded-lg   " style={{width:'800px'}}>
+      <div className="max-w-lg   space-y-7 p-7 rounded-lg" style={{width:'800px'}}>
         <div className="text-center">
           <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-blue-100">
             <UserPlus className="h-6 w-6 text-blue-600" />
