@@ -3,7 +3,7 @@ import React from 'react'
 function AddTransactions() {
     return (
         <>
-            <div className='border p-2'>
+            <div className='border p-2 '>
                 <h4 className='text-lg font-bold text-center text--500 mb-3 mt-2'>Add Transaction Details</h4>
                 <input type='text' placeholder='Transaction name:' className='w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'></input>
                 <input type='text' placeholder='Transaction Type:' className='w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'></input>

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 function Admindash() {
   const cards = [
-    { id: 1, title: "TOTAL TASK", value: "10", icons: <MdAssignment size={24} color='blue' />, path: "/" },
+    { id: 1, title: "TOTAL TASK", value: "10", icons: <MdAssignment size={24} color='blue' />, path: "/dash" },
     { id: 2, title: "COMPLETED TASK", value: "7", icons: <MdCheckCircle size={24} color='green' />, path: '/completed' },
     { id: 3, title: "PENDING TASK", value: "3", icons: <MdPendingActions size={24} color='yellow' />, path: '/pending' },
     { id: 4, title: "IN PROGRESS TASK", value: "2", icons: <MdError size={24} color='red' />, path: '/inprogress' },
