@@ -29,6 +29,8 @@ const Leads = () => {
   };
 
   return (
+
+    
     <Box p={4}>
       <Typography variant="h4" fontWeight="bold" gutterBottom color="primary">
         Project Monitoring
@@ -63,17 +65,7 @@ const Leads = () => {
                   }}
                 />
               </CardContent>
-              <Box display="flex" justifyContent="space-between" p={2}>
-                <Button variant="contained" sx={{ bgcolor: "#FF9800" }} onClick={() => updateStatus(project.id, "Pending")}>
-                  Pending
-                </Button>
-                <Button variant="contained" sx={{ bgcolor: "#2196F3" }} onClick={() => updateStatus(project.id, "On Progress")}>
-                  Progressing
-                </Button>
-                <Button variant="contained" sx={{ bgcolor: "#4CAF50" }} onClick={() => updateStatus(project.id, "Finished")}>
-                  Finished
-                </Button>
-              </Box>
+              
             </Card>
           </Grid>
         ))}
