@@ -9,9 +9,9 @@ import InprogressTask from './Pages/InprogressTask.jsx'
 import Accounts from './Pages/Accounts.jsx'
 import Investments from './Pages/Investments.jsx'
 import Transactions from './Pages/Transactions.jsx'
-// import OverdueTasks from './Pages/OverdueTasks.jsx'
 import Login from './Pages/Login.jsx'
 import Register from './Pages/Register.jsx'
+import  Leads  from './Pages/Leads.jsx'
 
 
 function App() {
@@ -30,6 +30,8 @@ function App() {
     <Route path='/transactions' element={<Transactions/>}/>
     <Route path='/' element={<Login/>}/>
     <Route path="/register" element={<Register />} />
+    <Route path="/Leads" element={<Leads />} />
+
    
     </Routes> 
    
